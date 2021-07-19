@@ -1,0 +1,88 @@
+body{
+    background-color: #bdc9d5;  
+    font-family: 'Helvetica Neue', Helvetica, Arial,sans-serif; 
+    text-align: justify;
+}
+
+h1{
+    font-family: Sounds  Good; 
+    font-size:xx-large; 
+    color: #e70773;
+}
+
+ul{
+    list-style: none;
+    text-align: right;
+}
+
+li{
+    display: inline;
+}
+
+figcaption{
+    text-align: center;
+}
+
+img{
+    display: block; margin:0 auto; width:90%;
+}
+
+las lineas {
+    height:10px;
+    border-width:0;
+    color:#e70773;
+    background-color:#e70773
+}
+
+#members{
+    background-color: rgba(96, 162, 168, 0.8);
+}
+
+h3{
+    font-family: Sounds  Good; font-size:x-large; color: #e70773;
+    
+}
+
+section{
+    background-color: rgba(96, 162, 168, 0.4);
+}
+
+mark{
+    background-color: #60a2a8;
+}
+
+img2{
+    display: block; margin:0 auto; width:50%;
+}
+
+article{
+    background-color: rgba(96, 162, 168, 0.2);
+}
+
+footer{
+    text-align: center;
+}
+
+span{
+    color: white;
+}
+
+
+/* GALERIA */
+iframe{
+    display: block; 
+    margin:0 auto;
+}
+
+div{
+    background-color: rgba(133, 154, 167, 0.5);
+    
+}
+
+/* DISCOGRAFIA */
+
+h2{
+    font-family: Sounds  Good; 
+    font-size:large; 
+    color: #e70773;
+}

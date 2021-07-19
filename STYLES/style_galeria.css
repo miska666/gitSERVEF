@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: inline-block;
+    width: 100%;
+    background-color: #bdc9d5f5;  
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+}
+
+/*---------GENERALES------*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+li {
+    float: left;
+}
+
+li a {
+    color: black;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+}
+
+
+h1,
+h3{
+    padding-left: 30px;
+    color: #e70773;
+    font-family: 'Amatic SC', cursive;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+h3{
+    background-color:rgba(255, 255, 255, 0.2);
+}
+
+figcaption{
+    margin: 10px 10px 0 0;
+    font-size: 12px;
+    text-align: right;
+}
+
+p,
+figcaption, address{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p, address{
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+p > a,
+address > a{
+    text-decoration: none;
+    font-style: normal;
+    color: #e70773;
+}
+
+
+p > a:hover,
+address > a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+mark{
+   background-color: rgba(0,0,0, 0);
+   color: #e70773;
+}
+
+
+/*----------------HEADER----------------------*/
+.header{
+    width: 100%;
+    margin-bottom: 20px;
+    border-top: 20px solid #e70773;
+}
+
+.header h1{
+    float: left;
+    height: 45px;
+    padding-left: 20px;
+    font-size: 40px;
+}
+
+
+.header nav{
+    height: 65px;
+    float: right;
+}
+
+
+.menuSuperior li a{
+    padding: 7px 16px;
+    font-size: 40px;
+}
+
+
+.menuSuperior li a:hover{
+    background: #e70773;
+    color: white;
+}
+
+.header img{
+    width: 81%;
+    margin: 0 9.5%;
+}
+
+
+/*-----CONTENIDO------*/
+div #gallery{
+    display: block;
+    margin: 100px auto;
+}
+
+div iframe{
+    display: block; 
+    margin:30px auto;
+}
+
+.spoty{
+    position: fixed;
+    top: 500px;
+    right: 40px;
+}
+
+
+
+
+/*-----FOOTER------*/
+.footer{
+    float: left;
+    width: 100%;
+    /* margin-top: 50px; */
+    padding: 30px 0;
+
+    text-align: center;
+    border-top: 1px solid #e70773;
+}
+
+
+.footer > nav {
+    float: left;
+    width: 100%;
+}
+
+.footer nav ul {
+    width: 50%;
+    margin: 0 auto 15px auto;
+}
+
+.footer nav ul li{
+    width: 20%;
+}
+
+
+.footer nav ul li a{
+    display: block;
+    font-size: 25px;
+    color: black;
+}
+
+.footer nav ul li a:hover{
+    color: #e70773;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.footer p{
+    width: 100%;
+    float: left;
+    margin-bottom: 0;
+}

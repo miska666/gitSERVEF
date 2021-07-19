@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="STYLES/style_forms.css">
+
+    <title>Gallery</title>
+</head>
+<body>
+
+    <header class="header">
+        <h1>FAR FROM ALASKA</h1>
+
+        <nav> 
+            <ul class="menuSuperior">
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="discografia.html">Discography</a></li>
+                <li><a href="galeria.html">Gallery</a></li>
+                <li><a href="contacto.html">Contact</a></li>
+                <li><a href="merchandising.html">Merch</a></li>
+            </ul>
+        </nav>
+
+        <img src="IMAGES/Far-From-Alaska---web.jpg" alt= "Far From Alaska" title="Promotion picture from their single 'Monkey'">
+        
+    </header>
+
+
+    <div>
+
+        <h3>Compra de camisetas</h3>
+
+        <form action="#" method="GET">
+        
+        <fieldset>
+            <legend>Datos compra</legend>
+            <div> 
+                <label for="f_numTarjeta">Nº de tarjeta de crédito: </label>
+                <input type="number" name="f_numTarjeta" id="f_numTarjeta" pattern="[0-9]{16}" required/> 
+                <br />
+                <span>(sólo se permite esta forma de pago)</span>
+            </div>
+
+            <div>
+                <label>Modelos de camiseta</label><br />
+                <div class="camisetas">
+                    <div class="modelo">
+                        <label for="cam1"><img src="IMAGES/T-SHIRT/1.png?123" alt= "ModeloUno" title="FFA camiseta"></label>
+                        <div>
+                            <input type="radio" id="cam1" name="camisetas" value="modelo1">
+                            <label for="cam1"> Modelo uno</label>
+                        </div>
+                    </div>
+
+                    <div class="modelo">
+                        <label for="cam2"><img src="IMAGES/T-SHIRT/2.png" alt= "ModeloUno" title="FFA camiseta"></label>
+                        <div>
+                            <input type="radio" id="cam2" name="camisetas" value="modelo2">
+                            <label for="cam2"> Modelo dos</label>
+                        </div>
+                    </div>
+
+                    <div class="modelo">
+                        <label for="cam3"><img src="IMAGES/T-SHIRT/3.png" alt= "ModeloUno" title="FFA camiseta"></label>
+                        <div>
+                            <input type="radio" id="cam3" name="camisetas" value="modelo3">
+                            <label for="cam3"> Modelo tres</label>
+                        </div>
+                    </div>
+
+                    <div class="modelo">
+                        <label for="cam4"><img src="IMAGES/T-SHIRT/4.png" alt= "ModeloUno" title="FFA camiseta"></label>
+                        <div>
+                            <input type="radio" id="cam4" name="camisetas" value="modelo4">
+                            <label for="cam4"> Modelo cuatro</label>
+                        </div>
+                    </div>
+
+                    <div class="modelo">
+                        <label for="cam5"><img src="IMAGES/T-SHIRT/5.png" alt= "ModeloUno" title="FFA camiseta"></label>
+                        <div>
+                            <input type="radio" id="cam5" name="camisetas" value="modelo5">
+                            <label for="cam5"> Modelo cinco</label>
+                        </div>
+                    </div>
+
+                </div>
+          
+            </div>
+            <div>
+                <label for="talla">Escoge tu talla:</label>
+
+                    <select id="talla">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    </select>
+               
+            </div>
+            <div>
+                <label for="f_num">Número de unidades: </label>
+                <input type="number" name="f_num" id="f_num" min="1" max="10"/> <br />
+            </div>
+
+            <div>
+                <label for="f_color">Color: </label>
+                <input type="color" name="f_color " id="f_color" /> <br />        
+            </div>
+        </fieldset>
+           
+        <fieldset>
+            <legend> Datos comprador </legend>
+            <div>
+                <label for="fdni">DNI:</label>
+                <input type="text" id="fdni" name="fdni" required placeholder="Introduzca su DNI" pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 números y una letra" />
+       
+            </div>
+            <div>
+                <label for="f_nombre">Nombre:</label>
+                <input type="text" id="f_nombre" name="f_nombre" required />
+            </div>
+            <div>
+                <label for="f_apellidos">Apellidos:</label>
+                <input type="text" id="f_apellidos" name="f_apellidos" />
+            </div>
+
+            <div>
+                <label for="f_email">Email:</label>
+                <input type="email" id="f_email" name="f_email" required/><br>
+            </div>
+
+            <div>
+                <label for="f_telefono">Teléfono:</label>
+                <input type="tel" id="f_telefono" name="f_telefono" pattern="[0-9]{9}" maxlength="9" required /> 
+            </div>
+
+            <div>
+                <label for="f_direccion">Dirección:</label>
+                <input type="text" id="f_direccion" name="f_direccion" required/>
+            </div>
+
+            <div>
+                <label for="f_CP">CP:</label>
+                <input type="text" id="f_CP" name="f_CP" required pattern="[0-9]{5}" maxlength="5" />
+            </div>
+
+            <div>
+                <label for="f_ciudad">Ciudad:</label>
+                <input type="text" id="f_ciudad" name="f_ciudad" required />
+            </div>
+            <div>
+                <label for="f_fecha">Fecha esperada de entrega: </label>
+                <input type="datetime-local" name="f_fecha" id="f_fecha"/>
+            </div>
+            <div>
+                <label for="f_horaD">Desde que hora:</label><input type="time" name="hora_entrada" id="f_horaD" required/> 
+            </div>
+            <div>
+                <label for="f_horaS">Hasta que hora:</label><input type="time" name="hora_salida" id="f_horaS" required /> 
+            </div>
+
+            <div>  
+                <label for="f_coment">Comentarios</label>
+                <textarea id="f_coment" name="f_coment" maxlength="300"></textarea>
+            </div>
+           
+           <div class="centrar">
+                <input type="submit" value="Enviar">
+           </div>
+            
+        </fieldset>    
+
+        </form>
+    </div>
+
+    <footer class="footer">
+        <nav> 
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="discografia.html">Discography</a></li>
+                <li><a href="galeria.html">Gallery</a></li>
+                <li><a href="contacto.html">Contact</a></li>
+                <li><a href="merchandising.html">Merch</a></li>
+            </ul>
+        </nav>
+
+        <p>© 2020. Website created by Magaly P. <br /> All rights reserved <br /><a href="mailto:magalyzaflor@gmail.com">contact me</a></p>
+
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="STYLES/style_forms.css">
+
+    <style>
+        div{
+            margin: 0 auto;
+        }
+    </style>
+
+    <!-- validacion con javascript en archivo externo -->
+    <script type="text/javascript" src="./JS/validarForm.js" ></script>
+
+    <title>Contacto</title>
+
+
+</head>
+<body>
+
+    <header class="header">
+        <h1>FAR FROM ALASKA</h1>
+
+        <nav> 
+            <ul class="menuSuperior">
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="discografia.html">Discography</a></li>
+                <li><a href="galeria.html">Gallery</a></li>
+                <li><a href="contacto.html">Contact</a></li>
+                <li><a href="merchandising.html">Merch</a></li>
+            </ul>
+        </nav>
+
+        <img src="IMAGES/Far-From-Alaska---web.jpg" alt= "Far From Alaska" title="Promotion picture from their single 'Monkey'">
+
+        
+    </header>
+
+
+    <div>
+
+        <h3>Contacto</h3>
+        <!-- validacion con PHP -->
+        <form action="./PHP/validarForm.php" method="POST" autocomplete="">
+            <fieldset>
+                <legend>Datos de contacto</legend>
+
+                <div>
+                    <label for="f_nombre">Nombre:</label>
+                    <!-- validacion con el propio navegador required en el HTML -->
+                    <input type="text" id="f_nombre" name="f_nombre" maxlength="30" placeholder="Escribe tu nombre" required autofocus onblur="muestraValidacionNombre();"/>
+                    <br />
+                    <span>* Campo obligatorio</span><span id="incompleto_nombre"></span>
+                </div>
+                <div>
+                    <label for="f_email">Email:</label>
+                    <!-- validacion con el propio navegador required en el HTML y al ser tipo email algunos navegadores piden también @ -->
+                    <input type="email" id="f_email" name="f_email" required placeholder="correo@empresa.com" onblur="muestraValidacionEmail();"/> 
+                    <br />
+                    <span>* Campo obligatorio</span><span id="incompleto_email"></span>
+              
+                </div>
+                <div >
+                    <label>¿Cómo nos has encontrado?</label><br />
+                    <div class="opciones">
+                        <input type="radio" id="con1" name="conocido" value="Google">
+                        <label class="encontrado" for="con1" id="conA"> Googleando</label>
+                        <input type="radio" id="con2" name="conocido" value="Email">
+                        <label class="encontrado" for="con2" id="conB"> Email</label>
+                        <input type="radio" id="con3" name="conocido" value="Boca a boca">
+                        <label class="encontrado" for="con3" id="conC"> Boca a boca</label>
+                        <input type="radio" id="con4" name="conocido" value="Facebook">
+                        <label class="encontrado" for="con4" id="conD"> Facebook</label>
+                        <input type="radio" id="con5" name="conocido" value="Twitter">
+                        <label class="encontrado" for="con3" id="conE"> Twitter</label>
+                        <input type="radio" id="con6" name="conocido" value="otros">
+                        <label class="encontrado" for="con4" id="conF"> Otros</label> <br />
+                        <span id="incompleto_radio"></span>
+                    </div>
+                   
+                </div>
+                <div>
+                     
+                    <label for="f_mensaje">Escribe tu mensaje</label>
+                    <textarea id="f_mensaje" name="f_mensaje" maxlength="300" onfocus="muestraValidacionRadiobutton();" onblur="muestraValidacionMensaje();"></textarea>
+                    <span id="incompleto_mensaje"></span>
+    
+                </div>
+                <div>
+                    <input type="checkbox" name="f_acepto" value="aceptadas" id="f_acepto" checked onclick="muestraValidacionAceptarCondiciones();">
+                    <label class="acepto" for="f_acepto">Acepto que mis datos sean guardados</label><br />
+                    <span id="incompleto_acepto"></span>
+        
+                </div>
+               
+                <div id="demo-form" name="demo-form"></div>
+               <div class="centrar">
+                <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+               
+                    <!-- <div class="g-recaptcha" data-sitekey="6LcuSOMaAAAAAMDOhz2AVYa8fwx7XSLOmOzpeqYc"></div>  -->
+
+                <input type="submit" value="Enviar" >
+    
+               </div>
+                
+
+            </fieldset>
+
+        </form>
+    </div>
+
+    <footer class="footer">
+        <nav> 
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="discografia.html">Discography</a></li>
+                <li><a href="galeria.html">Gallery</a></li>
+                <li><a href="contacto.html">Contact</a></li>
+                <li><a href="merchandising.html">Merch</a></li>
+            </ul>
+        </nav>
+
+        <p>© 2020. Website created by Magaly P. <br /> All rights reserved <br /><a href="mailto:magalyzaflor@gmail.com">contact me</a></p>
+
+    </footer>
+
+
+
+        <!-- el recaptcha -->
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+    
+        <script>
+            function onSubmit(token) {
+              document.getElementById("demo-form").submit();
+            }
+        </script>
+    
+</body>
+</html>

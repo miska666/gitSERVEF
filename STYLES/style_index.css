@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: inline-block;
+    width: 100%;
+    background-color: #bdc9d5f5;  
+}
+
+
+/*---------GENERALES------*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+li {
+    float: left;
+}
+
+li a {
+    color: black;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+}
+
+
+h1,
+h3{
+    color: #e70773;
+    font-family: 'Amatic SC', cursive;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+figcaption{
+    margin: 10px 10px 0 0;
+    font-size: 12px;
+    text-align: right;
+}
+
+p,
+figcaption, address{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p, address{
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+p > a,
+address > a{
+    text-decoration: none;
+    font-style: normal;
+    color: #e70773;
+}
+
+
+p > a:hover,
+address > a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+mark{
+   background-color: rgba(0,0,0, 0);
+   color: #e70773;
+}
+
+
+/*----------------HEADER----------------------*/
+.header{
+    width: 100%;
+    margin-bottom: 20px;
+    border-top: 20px solid #e70773;
+}
+
+.header h1{
+    float: left;
+    height: 45px;
+    padding-left: 20px;
+    font-size: 40px;
+}
+
+
+.header nav{
+    height: 65px;
+    float: right;
+}
+
+
+.menuSuperior li a{
+    padding: 7px 16px;
+    font-size: 40px;
+}
+
+
+.menuSuperior li a:hover{
+    background: #e70773;
+    color: white;
+}
+
+.header img{
+    width: 81%;
+    margin: 0 9.5%;
+}
+
+
+/*----------------MEMBERS----------------------*/
+.members{
+    float: left;
+    width: 15%;
+    margin-left: 10px;
+    padding: 20px;
+}
+
+.members h3{
+    padding-bottom: 20px;
+}
+
+
+.members ul li{
+    line-height: 30px;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.members ul li i{
+    font-weight: normal;
+}
+
+
+
+/*----------------MAIN----------------------*/
+.main{
+    float: right;
+    width: 83%;
+    background-color: rgba(255, 255, 255, 0.3);
+
+    margin: 0 0 30px 10px;
+}
+
+.main .izquierda{
+    float: left;
+    width: 65%;
+    padding: 20px;
+}
+
+
+.main .izquierda h1{
+    padding-bottom: 20px;
+}
+
+.main .izquierda p{
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+
+.main .derecha{
+    float: left;
+    width: 35%;
+    padding: 30px;
+}
+
+.main .derecha img{
+    width: 100%;
+    padding-top: 150px;
+}
+
+
+/*----------------ARTICLE----------------------*/
+.article{
+    background-color:rgba(255, 255, 255, 0.2);
+    float: left;
+    width: 100%;
+    margin: 10px 30px 0 0;
+}
+
+.article .izquierda{
+    float: left;
+    width: 35%;
+    padding: 20px;
+}
+
+
+.article .izquierda img{
+    display: block; 
+    margin:0 auto; 
+    width:100%;
+    padding-top: 85px;
+}
+
+
+.article .derecha{
+    float: left;
+    width: 65%;
+    padding: 30px;
+}
+
+
+.article .derecha h3{
+    padding-bottom: 20px;
+    color: #e70773;
+}
+
+
+
+
+/*-----FOOTER------*/
+.footer{
+    float: left;
+    width: 100%;
+    /* margin-top: 50px; */
+    padding: 30px 0;
+
+    text-align: center;
+    border-top: 1px solid #e70773;
+}
+
+
+.footer > nav {
+    float: left;
+    width: 100%;
+}
+
+.footer nav ul {
+    width: 50%;
+    margin: 0 auto 15px auto;
+}
+
+.footer nav ul li{
+    width: 20%;
+}
+
+
+.footer nav ul li a{
+    display: block;
+    font-size: 25px;
+    color: black;
+}
+
+.footer nav ul li a:hover{
+    color: #e70773;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.footer p{
+    width: 100%;
+    float: left;
+    margin-bottom: 0;
+}
+
+/* ANIMACION LOGO _______________________________________________________________*/
+
+#logo{
+    width: 200px;
+    animation-name: floating;
+	-webkit-animation-name: floating;
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0%);	
+	}
+	50% {
+		transform: translateY(8%);	
+	}	
+	100% {
+		transform: translateY(0%);
+	}			
+}
+
+@-webkit-keyframes floating {
+	0% {
+		-webkit-transform: translateY(0%);	
+	}
+	50% {
+		-webkit-transform: translateY(8%);	
+	}	
+	100% {
+		-webkit-transform: translateY(0%);
+	}			
+}
+
+section:hover, article:hover{
+    animation-name: pullDown;
+	-webkit-animation-name: pullDown;	
+
+	animation-duration: 1.1s;	
+	-webkit-animation-duration: 1.1s;
+
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease-out;	
+
+	transform-origin: 50% 0%;
+	-ms-transform-origin: 50% 0%;
+	-webkit-transform-origin: 50% 0%;
+
+}
+
+@keyframes pullDown {
+	0% {
+		transform: scaleY(0.1);
+	}
+	40% {
+		transform: scaleY(1.02);
+	}
+	60% {
+		transform: scaleY(0.98);
+	}
+	80% {
+		transform: scaleY(1.01);
+	}
+	100% {
+		transform: scaleY(0.98);
+	}				
+	80% {
+		transform: scaleY(1.01);
+	}
+	100% {
+		transform: scaleY(1);
+	}							
+}
+
+@-webkit-keyframes pullDown {
+	0% {
+		-webkit-transform: scaleY(0.1);
+	}
+	40% {
+		-webkit-transform: scaleY(1.02);
+	}
+	60% {
+		-webkit-transform: scaleY(0.98);
+	}
+	80% {
+		-webkit-transform: scaleY(1.01);
+	}
+	100% {
+		-webkit-transform: scaleY(0.98);
+	}				
+	80% {
+		-webkit-transform: scaleY(1.01);
+	}
+	100% {
+		-webkit-transform: scaleY(1);
+	}		
+}
